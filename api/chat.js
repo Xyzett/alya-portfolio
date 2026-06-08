@@ -70,7 +70,7 @@ Jangan menggunakan tanda * atau #.
         console.error(error);
 
         res.status(500).json({
-            reply: "AI sedang sibuk, coba lagi."
+            reply: error.message || "Unknown error"
         });
 
     }
