@@ -200,3 +200,10 @@ userInput.addEventListener(
     }
   }
 );
+
+function trackCVDownload() {
+  gtag('event', 'download_cv', {
+    event_category: 'engagement',
+    event_label: 'CV Download'
+  });
+}
